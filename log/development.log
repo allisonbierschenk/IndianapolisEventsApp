@@ -7254,3 +7254,287 @@ Processing by Api::V1::EventsController#index as HTML
 Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.7ms | Allocations: 4097)
 
 
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:03:54 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 3.6ms | Allocations: 4694)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:03:55 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.7ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:10:13 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 2.7ms | Allocations: 4694)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:10:14 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 56ms (Views: 55.6ms | ActiveRecord: 0.3ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:10:59 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 2.0ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:10:59 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.4ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:11:45 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:11:45 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (7.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 10.8ms | ActiveRecord: 7.5ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:18:17 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 3.1ms | Allocations: 4674)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:19:29 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.4ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:21:15 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.4ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:24:52 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.5ms | Allocations: 4117)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:24:52 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.5ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:26:44 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.4ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:26:44 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (58.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 70ms (Views: 9.8ms | ActiveRecord: 58.1ms | Allocations: 4098)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:29:38 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (1.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 25.4ms | ActiveRecord: 1.9ms | Allocations: 4098)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:29:38 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.4ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:33:31 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 10:33:31 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.4ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 11:03:24 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mEvent Load (3.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 4.8ms | Allocations: 4675)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 11:03:25 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.3ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 11:32:07 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mEvent Load (2.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 57ms (Views: 52.1ms | ActiveRecord: 5.0ms | Allocations: 4674)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 11:32:07 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (195.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 241ms (Views: 45.2ms | ActiveRecord: 195.0ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 11:32:54 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.7ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 11:32:54 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.4ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 13:59:53 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mEvent Load (3.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 287ms (Views: 280.4ms | ActiveRecord: 33.8ms | Allocations: 4675)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 13:59:53 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.8ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 14:01:06 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.3ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 14:01:07 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 1.0ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 14:02:39 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.7ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 14:02:39 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.7ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 14:04:21 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.7ms | Allocations: 4098)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 14:04:21 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 1.1ms | Allocations: 4098)
+
+
+Started GET "/" for ::1 at 2022-05-28 14:04:52 -0500
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/allisonreynolds/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/allisonreynolds/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.1.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.5ms | Allocations: 291)
+Completed 200 OK in 35ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 2266)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 14:05:46 -0500
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (122.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 233ms (Views: 30.5ms | ActiveRecord: 131.0ms | Allocations: 10671)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 14:05:47 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 4097)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 14:19:12 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+  [1m[36mEvent Load (2.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 4.2ms | Allocations: 4694)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-05-28 14:19:12 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.5ms | Allocations: 4097)
+
+

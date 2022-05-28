@@ -3,6 +3,7 @@ import axios from "axios";
 import Events from "../../indy-events/src/components/events";
 import { useEffect, useState } from "react";
 import Pagination from "../../indy-events/src/components/pagination";
+import Map from "./components/map";
 
 const API_URL = "http://localhost:3000/api/v1/events";
 
@@ -33,6 +34,7 @@ function App() {
   return (
     <div className="App">
       <Events events={currentEvents} />
+      <Map currentEvents={currentEvents} />
       <Pagination
         eventsPerPage={eventsPerPage}
         totalEvents={events.length}
