@@ -7,7 +7,6 @@ import Geocode from "react-geocode";
 
 export const Map = (props) => {
   const [ selected, setSelected ] = useState({});
-  
   const onSelect = item => {
     setSelected(item);
   }
@@ -15,23 +14,23 @@ export const Map = (props) => {
 const addresses = props.currentEvents.map(event => event.address)
 console.log("addresses:", addresses)
 
-//write a function that uses the addresses array to fill in the geocod
+//write a function that uses the addresses array to fill in the geocode
   function setGeocode () {
 
   }
 
   //working geocode
   Geocode.setApiKey("AIzaSyB3IN9Vn1VXoS_VS1U6TXlAG5Gn2y__wqs");
-  Geocode.fromAddress("801 W. Washington St. Indianapolis, IN 46204").then(
+  Geocode.fromAddress(addresses[0]).then(
     (response) => {
-      const location = response.results[0].geometry.location;
-      console.log("location:", location);
+      const {lat, lng} = response.results[0].geometry.location;
+      console.log("response", response.results)
+      console.log("lat,lng:", lat, lng);
     },
     (error) => {
       console.error(error);
     }
     );
-    console.log("geocode:", Geocode)
 
   const locations = [
     {
