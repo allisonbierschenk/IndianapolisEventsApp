@@ -1,9 +1,10 @@
 import "./App.css";
 import axios from "axios";
-import Events from "../../indy-events/src/components/events";
+import Events from "../../events-in-indy/src/components/events";
 import { useEffect, useState } from "react";
-import Pagination from "../../indy-events/src/components/pagination";
+import Pagination from "../../events-in-indy/src/components/pagination";
 import Map from "./components/map";
+import Geocode from "react-geocode";
 
 const API_URL = "http://localhost:3000/api/v1/events";
 

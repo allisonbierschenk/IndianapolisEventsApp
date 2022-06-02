@@ -26,7 +26,7 @@ function Events(props) {
         </h2>
         <p>{event.date}</p>
         <p>Venue: {event.venue}</p>
-        <p>Address: {event.address}</p>
+        <p id='address'>Address: {event.address}</p>
       </div>
     );
   });
