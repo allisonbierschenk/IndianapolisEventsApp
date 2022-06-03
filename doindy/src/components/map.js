@@ -22,15 +22,15 @@ export const Map = (props) => {
   console.log("addresses:", addresses);
 
   useEffect(() => {
-    let setCoords = [];
+    // let setCoords = [];
     const setGeocode = async () => {
       for (let i = 0; i < addresses.length; i++) {
         Geocode.fromAddress(addresses).then((response) => {
           let { lat, lng } = response.results[0].geometry.location;
           // console.log("response", response);
           // console.log("getcoords", getCoords);
-          console.log("addresses.length:", addresses.length);
-          setCoords(getCoords);
+          console.log("lat,lng", { lat, lng });
+          setCoords({ lat, lng });
         });
       }
     };
