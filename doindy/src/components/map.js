@@ -86,7 +86,7 @@ export const Map = (props) => {
 
   return (
     <LoadScript googleMapsApiKey="AIzaSyB3IN9Vn1VXoS_VS1U6TXlAG5Gn2y__wqs">
-      <GoogleMap mapContainerStyle={mapStyles} zoom={13} center={defaultCenter}>
+      <GoogleMap mapContainerStyle={mapStyles} zoom={15} center={defaultCenter}>
         {locations.map((item, index) => {
           console.log("item", item);
           return (

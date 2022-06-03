@@ -9692,3 +9692,17 @@ Processing by Api::V1::EventsController#index as HTML
 Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 1.0ms | Allocations: 3593)
 
 
+Started GET "/api/v1/events" for ::1 at 2022-06-03 10:06:43 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.5ms | Allocations: 3593)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-06-03 10:08:41 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (2.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 36ms (Views: 29.4ms | ActiveRecord: 2.8ms | Allocations: 3593)
+
+
