@@ -8,7 +8,7 @@ import {
 } from "@react-google-maps/api";
 import Geocode from "react-geocode";
 
-Geocode.setApiKey("AIzaSyB3IN9Vn1VXoS_VS1U6TXlAG5Gn2y__wqs");
+Geocode.setApiKey("AIzaSyDwN1OfrDC7ToLCVnPn9LJUs68F8-60dbo");
 
 export const Map = (props) => {
   const [selected, setSelected] = useState({});
@@ -28,15 +28,14 @@ export const Map = (props) => {
       for (let i = 0; i < addresses.length; i++) {
         Geocode.fromAddress(addresses).then((response) => {
           let { lat, lng } = response.results[0].geometry.location;
-          // console.log("response", response);
-          // console.log("getcoords", getCoords);
+          console.log("response", response);
           console.log("lat,lng", { lat, lng });
           setCoords({ lat, lng });
         });
       }
     };
     setGeocode();
-  }, [addresses]);
+  }, []);
   console.log("coords:", coords);
 
   const locations = [
@@ -86,8 +85,8 @@ export const Map = (props) => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyB3IN9Vn1VXoS_VS1U6TXlAG5Gn2y__wqs">
-      <GoogleMap mapContainerStyle={mapStyles} zoom={15} center={defaultCenter}>
+    <LoadScript googleMapsApiKey="AIzaSyDwN1OfrDC7ToLCVnPn9LJUs68F8-60dbo">
+      <GoogleMap mapContainerStyle={mapStyles} zoom={11} center={defaultCenter}>
         {locations.map((item, index) => {
           return (
             <Marker
