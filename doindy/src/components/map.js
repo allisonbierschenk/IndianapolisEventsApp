@@ -92,11 +92,11 @@ export const Map = (props) => {
             <Marker
               key={index}
               position={item.location}
-              // onClick={() => onSelect(item)}
+              onClick={() => onSelect(item)}
             />
           );
         })}
-        {/* {selected.location && (
+        {selected.location && (
           <InfoWindow
             position={selected.location}
             clickable={true}
@@ -104,7 +104,7 @@ export const Map = (props) => {
           >
             <p>{selected.name}</p>
           </InfoWindow>
-        )} */}
+        )}
       </GoogleMap>
     </LoadScript>
   );
