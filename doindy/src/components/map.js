@@ -86,7 +86,7 @@ export const Map = (props) => {
 
   return (
     <LoadScript googleMapsApiKey="AIzaSyDwN1OfrDC7ToLCVnPn9LJUs68F8-60dbo">
-      <GoogleMap mapContainerStyle={mapStyles} zoom={11} center={defaultCenter}>
+      <GoogleMap mapContainerStyle={mapStyles} zoom={10} center={defaultCenter}>
         {locations.map((item, index) => {
           return (
             <Marker
