@@ -1,8 +1,8 @@
 import "./App.css";
 import axios from "axios";
-import Events from "../../events-in-indy/src/components/events";
+import Events from "./components/events";
 import { useEffect, useState } from "react";
-import Pagination from "../../events-in-indy/src/components/pagination";
+import Pagination from "./components/pagination";
 import Map from "./components/map";
 import Geocode from "react-geocode";
 
@@ -29,7 +29,7 @@ function App() {
   const indexOfLastEvent = currentPage * eventsPerPage;
   const indexOfFirstEvent = indexOfLastEvent - eventsPerPage;
   const currentEvents = events.slice(indexOfFirstEvent, indexOfLastEvent);
-  console.log(currentEvents, "currenteventss");
+  console.log(currentEvents, "currentevents");
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
