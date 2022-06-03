@@ -18,9 +18,7 @@ export const Map = (props) => {
     setSelected(item);
   };
 
-  const addresses = props.currentEvents.map((event) =>
-    event.address.split("  ")
-  );
+  let addresses = props.currentEvents.map((event) => event.address);
   console.log("addresses:", addresses);
 
   useEffect(() => {
@@ -30,6 +28,7 @@ export const Map = (props) => {
           let getCoords = response.results[0].geometry.location;
           // console.log("response", response);
           // console.log("getcoords", getCoords);
+          console.log("addresses.length:", addresses.length);
           setCoords(getCoords);
         });
       }
@@ -37,6 +36,7 @@ export const Map = (props) => {
     setGeocode();
   }, []);
   console.log("coords:", coords);
+
   const locations = [
     {
       name: "Location 1",

@@ -4,7 +4,6 @@ import Events from "./components/events";
 import { useEffect, useState } from "react";
 import Pagination from "./components/pagination";
 import Map from "./components/map";
-import Geocode from "react-geocode";
 
 const API_URL = "http://localhost:3000/api/v1/events";
 
