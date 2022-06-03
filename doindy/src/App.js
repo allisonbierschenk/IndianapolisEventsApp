@@ -28,7 +28,6 @@ function App() {
   const indexOfLastEvent = currentPage * eventsPerPage;
   const indexOfFirstEvent = indexOfLastEvent - eventsPerPage;
   const currentEvents = events.slice(indexOfFirstEvent, indexOfLastEvent);
-  console.log(currentEvents, "currentevents");
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 

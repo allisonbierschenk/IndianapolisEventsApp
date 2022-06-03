@@ -8,38 +8,41 @@ import {
 } from "@react-google-maps/api";
 import Geocode from "react-geocode";
 
-Geocode.setApiKey("AIzaSyDwN1OfrDC7ToLCVnPn9LJUs68F8-60dbo");
+Geocode.setApiKey("AIzaSyBnFQ1hpMl6sIjup5qfkHO5DW1zkNfymc0");
 
 export const Map = (props) => {
   const [selected, setSelected] = useState({});
-  const [coords, setCoords] = useState([]);
+  const [allLocations, setAllLocations] = useState([]);
 
   const onSelect = (item) => {
     setSelected(item);
   };
+  //
   let eventDetails = props.currentEvents;
   console.log("event details:", eventDetails);
-  let addresses = props.currentEvents.map((event) => event.address);
-  console.log("addresses:", addresses);
+
+  // let addresses = props.currentEvents.map((event) => event.address);
+  // console.log("addresses:", addresses);
+
+  // loop the event details array (which contains all of the addresses of the events dynamically rendering on the page)
+  // geocode the address and push to a new array of objects containing the latitude and longitude
+  // pass the new array of objects within the Marker to replace the placeholder "locations"
+  function setGeocode(locales) {
+    console.log("locales:", locales);
+    locales.forEach((locale) => {
+      Geocode.fromAddress(locale.address).then((response) => {
+        let { lat, lng } = response.results[0].geometry.location;
+        setAllLocations((prevState) => [...prevState, { lat, lng }]);
+        console.log("lat,lng", { lat, lng });
+        console.log("locale.address:", locale.address);
+      });
+    });
+  }
 
   useEffect(() => {
-    let locations = [];
-    // map the addresses array (which contains all of the addresses of the events dynamically rendering on the page)
-    // geocode the address and push to a new array of objects containing the latitude and longitude
-    // pass the new array of objects within the Marker to replace the placeholder "locations"
-    const setGeocode = async () => {
-      for (let i = 0; i < addresses.length; i++) {
-        Geocode.fromAddress(addresses).then((response) => {
-          let { lat, lng } = response.results[0].geometry.location;
-          console.log("response", response);
-          console.log("lat,lng", { lat, lng });
-          setCoords({ lat, lng });
-        });
-      }
-    };
-    setGeocode();
-  }, [addresses]);
-  console.log("coords:", coords);
+    setGeocode(eventDetails);
+  }, [eventDetails]);
+  console.log("alllocations:", allLocations);
 
   const locations = [
     {
@@ -88,9 +91,9 @@ export const Map = (props) => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyDwN1OfrDC7ToLCVnPn9LJUs68F8-60dbo">
+    <LoadScript googleMapsApiKey="AIzaSyBnFQ1hpMl6sIjup5qfkHO5DW1zkNfymc0">
       <GoogleMap mapContainerStyle={mapStyles} zoom={10} center={defaultCenter}>
-        {locations.map((item, index) => {
+        {allLocations.map((item, index) => {
           return (
             <Marker
               key={index}
