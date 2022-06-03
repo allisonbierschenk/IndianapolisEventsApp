@@ -9650,3 +9650,31 @@ Processing by Api::V1::EventsController#index as HTML
 Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 1.3ms | Allocations: 3593)
 
 
+Started GET "/api/v1/events" for ::1 at 2022-06-02 21:26:21 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (5.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 288ms (Views: 279.0ms | ActiveRecord: 5.8ms | Allocations: 3594)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-06-02 21:26:45 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.8ms | Allocations: 3593)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-06-02 21:27:25 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 154ms (Views: 150.8ms | ActiveRecord: 0.6ms | Allocations: 3593)
+
+
+Started GET "/api/v1/events" for ::1 at 2022-06-03 09:59:03 -0500
+Processing by Api::V1::EventsController#index as HTML
+  [1m[36mEvent Load (1.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/api/v1/events_controller.rb:8:in `index'
+Completed 200 OK in 92ms (Views: 87.3ms | ActiveRecord: 26.9ms | Allocations: 5701)
+
+

@@ -22,10 +22,11 @@ export const Map = (props) => {
   console.log("addresses:", addresses);
 
   useEffect(() => {
+    let setCoords = [];
     const setGeocode = async () => {
       for (let i = 0; i < addresses.length; i++) {
         Geocode.fromAddress(addresses).then((response) => {
-          let getCoords = response.results[0].geometry.location;
+          let { lat, lng } = response.results[0].geometry.location;
           // console.log("response", response);
           // console.log("getcoords", getCoords);
           console.log("addresses.length:", addresses.length);
