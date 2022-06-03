@@ -34,49 +34,49 @@ export const Map = (props) => {
       }
     };
     setGeocode();
-  }, [addresses]);
+  }, []);
   console.log("coords:", coords);
 
   const locations = [
     {
       name: "Location 1",
       location: {
-        lat: 41.3954,
-        lng: 2.162,
+        lat: 39.77627811161605,
+        lng: -88.15601952844557,
       },
     },
     {
       name: "Location 2",
       location: {
-        lat: 41.3917,
-        lng: 2.1649,
+        lat: 39.77627811161605,
+        lng: -85.15601952844557,
       },
     },
     {
       name: "Location 3",
       location: {
-        lat: 41.3773,
-        lng: 2.1585,
+        lat: 38.77627811161605,
+        lng: -86.15601952844557,
       },
     },
     {
       name: "Location 4",
       location: {
-        lat: 41.3797,
-        lng: 2.1682,
+        lat: 40.77627811161605,
+        lng: -86.15601952844557,
       },
     },
     {
       name: "Location 5",
       location: {
-        lat: 41.4055,
-        lng: 2.1915,
+        lat: 39.927811161605,
+        lng: -86.14601952844557,
       },
     },
   ];
   const defaultCenter = {
-    lat: 41.3851,
-    lng: 2.1734,
+    lat: 39.77627811161605,
+    lng: -86.15601952844557,
   };
   const mapStyles = {
     height: "100vh",
@@ -86,16 +86,17 @@ export const Map = (props) => {
   return (
     <LoadScript googleMapsApiKey="AIzaSyB3IN9Vn1VXoS_VS1U6TXlAG5Gn2y__wqs">
       <GoogleMap mapContainerStyle={mapStyles} zoom={13} center={defaultCenter}>
-        {locations.map((item) => {
+        {locations.map((item, index) => {
+          console.log("item", item);
           return (
             <Marker
-              key={item.name}
+              key={index}
               position={item.location}
-              onClick={() => onSelect(item)}
+              // onClick={() => onSelect(item)}
             />
           );
         })}
-        {selected.location && (
+        {/* {selected.location && (
           <InfoWindow
             position={selected.location}
             clickable={true}
@@ -103,7 +104,7 @@ export const Map = (props) => {
           >
             <p>{selected.name}</p>
           </InfoWindow>
-        )}
+        )} */}
       </GoogleMap>
     </LoadScript>
   );
