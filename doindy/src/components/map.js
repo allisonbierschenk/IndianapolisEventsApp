@@ -36,7 +36,7 @@ export const Map = (props) => {
       }
     };
     setGeocode();
-  }, []);
+  }, [addresses]);
   console.log("coords:", coords);
 
   const locations = [
