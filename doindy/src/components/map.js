@@ -17,7 +17,8 @@ export const Map = (props) => {
   const onSelect = (item) => {
     setSelected(item);
   };
-
+  let eventDetails = props.currentEvents;
+  console.log("event details:", eventDetails);
   let addresses = props.currentEvents.map((event) => event.address);
   console.log("addresses:", addresses);
 
@@ -35,7 +36,7 @@ export const Map = (props) => {
       }
     };
     setGeocode();
-  }, [addresses]);
+  }, []);
   console.log("coords:", coords);
 
   const locations = [
@@ -88,7 +89,6 @@ export const Map = (props) => {
     <LoadScript googleMapsApiKey="AIzaSyB3IN9Vn1VXoS_VS1U6TXlAG5Gn2y__wqs">
       <GoogleMap mapContainerStyle={mapStyles} zoom={15} center={defaultCenter}>
         {locations.map((item, index) => {
-          console.log("item", item);
           return (
             <Marker
               key={index}

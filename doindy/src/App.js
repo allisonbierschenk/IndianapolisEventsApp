@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Pagination from "./components/pagination";
 import Map from "./components/map";
 
-const API_URL = "http://localhost:3000/api/v1/events";
+const API_URL = "https://indianapoliseventsapi.herokuapp.com/api/v1/events";
 
 async function getAPIdata() {
   const resp = await axios.get(API_URL);
