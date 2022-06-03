@@ -97,7 +97,7 @@ export const Map = (props) => {
           return (
             <Marker
               key={index}
-              position={item.location}
+              position={item}
               onClick={() => onSelect(item)}
             />
           );
