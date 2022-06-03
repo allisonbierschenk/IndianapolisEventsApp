@@ -23,7 +23,10 @@ export const Map = (props) => {
   console.log("addresses:", addresses);
 
   useEffect(() => {
-    // let setCoords = [];
+    let locations = [];
+    // map the addresses array (which contains all of the addresses of the events dynamically rendering on the page)
+    // geocode the address and push to a new array of objects containing the latitude and longitude
+    // pass the new array of objects within the Marker to replace the placeholder "locations"
     const setGeocode = async () => {
       for (let i = 0; i < addresses.length; i++) {
         Geocode.fromAddress(addresses).then((response) => {
@@ -35,7 +38,7 @@ export const Map = (props) => {
       }
     };
     setGeocode();
-  }, []);
+  }, [addresses]);
   console.log("coords:", coords);
 
   const locations = [
