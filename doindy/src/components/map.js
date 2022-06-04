@@ -8,7 +8,7 @@ import {
 } from "@react-google-maps/api";
 import Geocode from "react-geocode";
 
-Geocode.setApiKey("AIzaSyBnFQ1hpMl6sIjup5qfkHO5DW1zkNfymc0");
+Geocode.setApiKey("");
 
 export const Map = (props) => {
   const [selected, setSelected] = useState({});
@@ -16,7 +16,9 @@ export const Map = (props) => {
 
   const onSelect = (item) => {
     setSelected(item);
+    console.log("item", item);
   };
+  console.log("selected:", selected);
   //
   let eventDetails = props.currentEvents;
   console.log("event details:", eventDetails);
@@ -91,7 +93,7 @@ export const Map = (props) => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyBnFQ1hpMl6sIjup5qfkHO5DW1zkNfymc0">
+    <LoadScript googleMapsApiKey="">
       <GoogleMap mapContainerStyle={mapStyles} zoom={10} center={defaultCenter}>
         {allLocations.map((item, index) => {
           return (
